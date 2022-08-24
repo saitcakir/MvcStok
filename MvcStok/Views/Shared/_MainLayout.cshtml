@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 1rem;
+            background: #efefef;
+            font-size: 19px
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MVC Stok</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/Kategori/Index">KATEGORİLER</a></li>
+                <li><a href="/Urun/Index">ÜRÜNLER</a></li>
+                <li><a href="/Musteri/Index">MÜŞTERİLER</a></li>
+                <li><a href="/Satis/Index">SATIŞLAR</a></li>
+                <li><a href="/Yardim/Index">YARDIM</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <!--Footer###-->
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/sait-%C3%A7akir/"> @DateTime.Today.Year - Sait ÇAKIR</a>
+    </div>
+    <!--Footer###-->
+
+
+</body>
+</html>
